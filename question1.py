@@ -380,7 +380,8 @@ model.fit(X_train, y_train)
 y_pred = model.predict(X_test)
 
 print("\nClassification Report:")
-print(classification_report(y_test, y_pred, target_names=['bad', 'good']))
+print(classification_report(y_test, y_pred, labels=['good', 'bad'], target_names=['good', 'bad']))
+
 
 # ----------------------------
 # 6. Vectorization Function
